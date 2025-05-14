@@ -1,4 +1,4 @@
-import { View, Text, ActivityIndicator, TouchableOpacity, Alert, SafeAreaView, ScrollView, StatusBar } from 'react-native'
+import { View, Text, ActivityIndicator, TouchableOpacity, Alert, SafeAreaView, ScrollView, StatusBar, Linking } from 'react-native'
 import React, { useCallback, useState } from 'react'
 import { useFocusEffect, useRoute } from '@react-navigation/native';
 import { bookTicket, fetchBusDetails } from '../../service/requests/bus';
@@ -65,6 +65,37 @@ const SeatSelectionScreen = () => {
             seatNumbers: selectedSeats,
         });
     };
+
+    // const handleOnPay = async () => {
+    //     if (selectedSeats.length === 0) {
+    //         Alert.alert('Please select at least one seat.');
+    //         return;
+    //     }
+
+    //     // Replace this with your actual fare logic
+    //     const farePerSeat = busInfo?.fare || 100;
+    //     const totalAmount = farePerSeat * selectedSeats.length;
+
+    //     const transactionRef = `TICKET-${Date.now()}`;
+    //     const upiId = 'yourupiid@upi';
+    //     const payeeName = 'Your Company Name';
+
+    //     const upiUrl = `upi://pay?pa=${upiId}&pn=${encodeURIComponent(
+    //         payeeName
+    //     )}&tr=${transactionRef}&tn=${encodeURIComponent(
+    //         'Bus Ticket Payment'
+    //     )}&am=${totalAmount}&cu=INR`;
+
+    //     const supported = await Linking.canOpenURL(upiUrl);
+    //     if (supported) {
+    //         Linking.openURL(upiUrl);
+    //     } else {
+    //         Alert.alert(
+    //             'No UPI App Found',
+    //             'Please install a UPI-enabled app like Google Pay, PhonePe, or Paytm.'
+    //         );
+    //     }
+    // };
 
     if (isLoading) {
         return (
