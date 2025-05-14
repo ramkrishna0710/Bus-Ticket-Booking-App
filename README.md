@@ -6,7 +6,7 @@ A modern and efficient **Bus Ticket Booking App** built using **React Native**. 
 
 ## 📽️ Demo Video
 
-👉 [Watch Demo Video](https://drive.google.com/YOUR_VIDEO_LINK_HERE)  
+👉 [Watch Demo Video](https://drive.google.com/file/d/1Jue_aeBIDjEXmPEzilKIx29TNZWePRqR/view)  
 *(Replace this link with your actual Google Drive share link)*
 
 ---
