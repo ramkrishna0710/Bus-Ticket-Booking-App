@@ -1,0 +1,9 @@
+node_modules
+
+# Ignore build artifacts and APKs
+**.apk
+android/*
+ios/*
+.bundle
+.vscode
+__tests__
