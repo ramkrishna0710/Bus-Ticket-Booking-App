@@ -1,4 +1,4 @@
-# 🚌 BusBooking - React Native App
+# 🚌 Bus Ticket Booking - React Native App
 
 A modern and efficient **Bus Ticket Booking App** built using **React Native**. This app allows users to search, view, and book bus tickets easily with a smooth and responsive user interface.
 
