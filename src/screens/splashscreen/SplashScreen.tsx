@@ -48,7 +48,7 @@ const SplashScreen = () => {
   useEffect(() => {
     const timeoutId = setTimeout(() => {
       tokenCheck()
-    }, 1500)
+    }, 2500)
 
     return () => clearTimeout(timeoutId)
   }, [])
