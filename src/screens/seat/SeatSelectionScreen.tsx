@@ -219,7 +219,7 @@ const SeatSelectionScreen = () => {
                         date: new Date(busInfo.departureTime).toDateString(),
                         company: busInfo.company,
                         busType: busInfo.busType,
-                        seats: bookTicketMutation.data?.seatNumber,
+                        seats: bookTicketMutation.data?.seatNumbers,
                         ticketNumber: bookTicketMutation.data?._id || 'RAM5678941236',
                         pnr: bookTicketMutation.data?.pnr || 'PNR72113989',
                         fare: `${busInfo.price * selectedSeats.length}`,
